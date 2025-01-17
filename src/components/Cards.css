@@ -1,0 +1,57 @@
+.cards {
+  padding: 4rem;
+  background: #fff;
+}
+
+h1 {
+  text-align: justify;
+  font-family: 'Inter';
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Inter';
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+p {
+  text-align: justify;
+  font-family: 'Inter';
+}
+
+
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards__items {
+  display: flex; /* Alinha os itens horizontalmente */
+  justify-content: space-around; /* Distribui os itens */
+  margin-bottom: 24px;
+  width: 100%; /* Garante que ocupe toda a largura */
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o padding padrão */
+}
+
+.cards__item {
+  flex: 0 1 200px; /* Define largura fixa, permitindo que os itens sejam pequenos */
+  margin: 0 1rem;
+  text-align: center; /* Centraliza o texto */
+}
+
+.icon {
+  font-size: 40px; /* Tamanho do ícone */
+  margin-bottom: 10px; /* Espaçamento abaixo do ícone */
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards__item {
+    margin-bottom: 2rem;
+    flex: 0 1 150px; /* Ajusta a largura em telas menores */
+  }
+}
