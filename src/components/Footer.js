@@ -50,10 +50,10 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              Consultora de Imagem
+              <img src='/images/Logo.png' alt='logofooter' className='footer-logo-image'></img>
             </Link>
           </div>
-          <small className='website-rights'>Consultora de Imagem © 2025</small>
+          <small className='website-rights'>Suelen Velasco Consultoria © 2025</small>
           <div className='social-icons'>
             <Link className='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
               <i className='fab fa-facebook-f' />

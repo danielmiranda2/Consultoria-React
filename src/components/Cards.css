@@ -16,7 +16,7 @@ h2 {
 }
 p {
   text-align: justify;
-  font-family: 'Inter';
+  font-family: 'Rajdhani';
 }
 
 
@@ -27,6 +27,7 @@ p {
   max-width: 1120px;
   width: 90%;
   margin: 0 auto;
+  font-family: 'Rajdhani';
 }
 
 .cards__items {
@@ -36,12 +37,14 @@ p {
   width: 100%; /* Garante que ocupe toda a largura */
   list-style-type: none; /* Remove os marcadores da lista */
   padding: 0; /* Remove o padding padrão */
+  font-family: 'Rajdhani';
 }
 
 .cards__item {
   flex: 0 1 200px; /* Define largura fixa, permitindo que os itens sejam pequenos */
   margin: 0 1rem;
   text-align: center; /* Centraliza o texto */
+  font-family: 'Rajdhani';
 }
 
 .icon {
@@ -49,9 +52,26 @@ p {
   margin-bottom: 10px; /* Espaçamento abaixo do ícone */
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
+  .cards {
+    padding: 2rem; /* Reduzir o padding em telas menores */
+  }
+
+  .cards__items {
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens */
+  }
+
   .cards__item {
-    margin-bottom: 2rem;
-    flex: 0 1 150px; /* Ajusta a largura em telas menores */
+    flex: 0 1 100%; /* Faz os itens ocuparem toda a largura */
+    margin: 1rem 0; /* Margem vertical entre os itens */
+  }
+
+  h2 {
+    font-size: 16px; /* Ajuste do tamanho da fonte para cabeçalho */
+  }
+
+  p {
+    font-size: 14px; /* Ajuste do tamanho da fonte para parágrafo */
   }
 }

@@ -1,0 +1,34 @@
+.about-me-container {
+  display: flex; /* Para colocar a imagem e o texto lado a lado */
+  align-items: flex-start; /* Alinha verticalmente os itens */
+}
+
+.about-me-image {
+  width: 50%; /* Largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
+}
+
+.text-container {
+  width: 50%; /* Largura do contêiner de texto */
+  color: #fff2ec; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding na largura total */
+  position: relative; /* Para possibilitar o uso de pseudo-elementos, se necessário */
+  font-family: 'Rajdhani';
+  font-size: 17px;
+}
+.text-container p{
+  margin-top: 15px;
+}
+
+.text-container::before {
+  content: ''; /* Cria um pseudo-elemento */
+  position: fixed; /* Posiciona o pseudo-elemento */
+  top: 0; /* Alinha ao topo */
+  left: 0; /* Alinha à esquerda */
+  right: 0; /* Alinha à direita */
+  bottom: 0; /* Alinha à parte inferior */
+  background-color: rgba(0, 0, 0, 0.699); /* Fundo escurecido */
+  z-index: -1; /* Coloca atrás do texto */
+}

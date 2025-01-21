@@ -28,13 +28,13 @@ const Products = () => {
     {
       name: 'ABOUT',
       description: 'Análise de Estilo',
-      paragraph: 'Entendemos seu estilo de vida, gostos pessoais e o que você deseja transmitir com a sua imagem.\nA partir disso, identificamos seu estilo predominante e criamos sugestões para você se expressar de forma autêntica e confiante. Descubra seu estilo único e aprenda a escolher roupas que valorizam sua personalidade.',
+      paragraph: 'Descubra a paleta de cores que mais harmoniza com sua pele, olhos e cabelo. Aprenda a usar as cores a seu favor, trazendo mais vida e leveza para o seu visual. Escolha cores que iluminem seu rosto e melhorem sua aparência naturalmente.',
       image: '/images/productImage1.jpg',
     },
     {
       name: 'ABOUT',
       description: 'Análise de Biotipo',
-      paragraph: 'Avaliação do seu tipo de corpo para ajudar a identificar cortes, tecidos e modelos que mais valorizam sua silhueta. Escolha peças que destacam suas melhores características e sinta-se segura em qualquer ocasião.',
+      paragraph: 'Descubra a paleta de cores que mais harmoniza com sua pele, olhos e cabelo. Aprenda a usar as cores a seu favor, trazendo mais vida e leveza para o seu visual. Escolha cores que iluminem seu rosto e melhorem sua aparência naturalmente.',
       image: '/images/productImage3.png',
     },
   ];
