@@ -14,16 +14,15 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
 }
 
 .hero-container > h1 {
   color: #ffffff;
   font-size: 18px;
-  margin-top: 150px;
+  margin-top: 60px;
   margin-bottom: -20px;
-  font-family: 'Inter';
+  font-family: 'Poppins';
   font-weight: normal;
 }
 
@@ -37,8 +36,8 @@ video {
 .hero-container > h3 {
   margin-top: 20px;
   color: #fff;
-  font-size: 18px;
-  font-family: 'Forum';
+  font-size: 14px;
+  font-family: 'Poppins';
   font-weight: normal;
 }
 

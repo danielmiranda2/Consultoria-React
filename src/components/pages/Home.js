@@ -9,10 +9,18 @@ import Aboutme from '../Aboutme';
 function Home() {
   return (
     <>
-      <HeroSection />
-      <Cards />
-      <Aboutme/>
-      <Products/>
+      <div id="hero">
+        <HeroSection />
+      </div>
+      <div style={{ display: 'none' }}>
+      <Cards/>
+      </div>
+      <div id="aboutme">
+        <Aboutme />
+      </div>
+      <div id="products">
+        <Products />
+      </div>
       <Footer />
     </>
   );

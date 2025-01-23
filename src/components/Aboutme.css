@@ -1,34 +1,64 @@
 .about-me-container {
-  display: flex; /* Para colocar a imagem e o texto lado a lado */
-  align-items: flex-start; /* Alinha verticalmente os itens */
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  padding-top: 45px;
 }
 
 .about-me-image {
-  width: 50%; /* Largura da imagem */
-  height: auto; /* Mantém a proporção da imagem */
-  object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
+  width: 25%; 
+  height: auto; 
+  max-height: 100%;
+  object-fit: cover; 
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.about-me-image:hover{
+  transform:  translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(3deg) skew(0deg, 0deg);
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
 }
 
 .text-container {
-  width: 50%; /* Largura do contêiner de texto */
-  color: #fff2ec; /* Cor do texto */
-  padding: 20px; /* Espaçamento interno */
-  box-sizing: border-box; /* Inclui padding na largura total */
-  position: relative; /* Para possibilitar o uso de pseudo-elementos, se necessário */
-  font-family: 'Rajdhani';
+  width: 60%; 
+  color: #fff2ec; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  position: relative; 
   font-size: 17px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.text-container p{
-  margin-top: 15px;
+
+.text-container h1 {
+  font-family: 'Poppins';
+  font-size: 22px;
+  font-weight: normal;
+  position: relative;
+  z-index: 1;
+}
+.text-container p {
+  margin-top: 20.8px;
+  font-family: 'Poppins';
+  text-align: center;
+  font-weight: lighter;
+  
 }
 
 .text-container::before {
-  content: ''; /* Cria um pseudo-elemento */
-  position: fixed; /* Posiciona o pseudo-elemento */
-  top: 0; /* Alinha ao topo */
-  left: 0; /* Alinha à esquerda */
-  right: 0; /* Alinha à direita */
-  bottom: 0; /* Alinha à parte inferior */
-  background-color: rgba(0, 0, 0, 0.699); /* Fundo escurecido */
-  z-index: -1; /* Coloca atrás do texto */
+  content: ''; 
+  position: fixed;
+  top: 0;
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.699); 
+  z-index: -1; 
 }

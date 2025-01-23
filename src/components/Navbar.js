@@ -1,28 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-scroll'; 
 import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
 
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener('resize', showButton);
 
   return (
     <>
@@ -36,49 +21,26 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='hero' className='hover-effect-8' smooth={true} onClick={closeMobileMenu}>
                 INÍCIO
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='aboutme' className='hover-effect-8' smooth={true} onClick={closeMobileMenu}>
                 SOBRE
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='products' className='hover-effect-8' smooth={true} onClick={closeMobileMenu}>
                 SERVIÇOS
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='cards' className='hover-effect-8' smooth={true} onClick={closeMobileMenu}>
                 CONTATO
               </Link>
-            </li>
-
-            <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
+            </li>        
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>
