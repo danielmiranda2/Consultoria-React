@@ -25,6 +25,9 @@ function Home() {
       <div id="facSection">
         <FacSection/>
       </div>
+      <div id="facSection">
+        <FacSection/>
+      </div>
       <Footer />
     </>
   );
