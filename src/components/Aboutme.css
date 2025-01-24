@@ -9,6 +9,7 @@
   width: 25%; 
   height: auto; 
   max-height: 100%;
+  outline: cacl(var(--s)/2 solid #0009);
   object-fit: cover; 
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);

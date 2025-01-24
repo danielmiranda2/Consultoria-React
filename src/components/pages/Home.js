@@ -5,6 +5,7 @@ import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 import Products from '../Products';
 import Aboutme from '../Aboutme';
+import FacSection from '../FacSection'; 
 
 function Home() {
   return (
@@ -20,6 +21,9 @@ function Home() {
       </div>
       <div id="products">
         <Products />
+      </div>
+      <div id="facSection">
+        <FacSection/>
       </div>
       <Footer />
     </>

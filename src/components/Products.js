@@ -22,7 +22,7 @@ const Products = () => {
     {
       name: 'ABOUT',
       description: 'Coloração Pessoal',
-      paragraph:'beleza é harmonia e a harmonia traz repetição. Na análise de coloração pessoal, iremos encontrar quais cores já estão na sua beleza e repeti-las no seu vestir para trazer harmonia. Verificamos as caracteristicas das cores de seu rosto e replicamos numa cartela para uso de roupas, acessórios, coloração de cabelo e maquiagem, sempre buscando o que fica melhor para você.',
+      paragraph:'Beleza é harmonia e a harmonia traz repetição. Na análise de coloração pessoal, iremos encontrar quais cores já estão na sua beleza e repeti-las no seu vestir para trazer harmonia. Verificamos as caracteristicas das cores de seu rosto e replicamos numa cartela para uso de roupas, acessórios, coloração de cabelo e maquiagem, sempre buscando o que fica melhor para você.',
       image: '/images/productImage2.jpg',
     },
     {
