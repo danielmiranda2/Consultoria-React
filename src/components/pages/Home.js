@@ -3,7 +3,7 @@ import '../../App.css';
 import Cards from '../Cards';
 import HeroSection from '../HeroSection';
 import Footer from '../Footer';
-import Products from '../Products';
+import SimpleSlider from '../SimpleSlider';
 import Aboutme from '../Aboutme';
 import FacSection from '../FacSection'; 
 
@@ -19,8 +19,8 @@ function Home() {
       <div id="aboutme">
         <Aboutme />
       </div>
-      <div id="products">
-        <Products />
+      <div id="slider">
+        <SimpleSlider />
       </div>
       <div id="facSection">
         <FacSection/>
