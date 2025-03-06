@@ -31,12 +31,12 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='products' className='hover-effect-8' smooth={true} onClick={closeMobileMenu}>
+              <Link to='slide' className='hover-effect-8' smooth={true} onClick={closeMobileMenu}>
                 SERVIÇOS
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='cards' className='hover-effect-8' smooth={true} onClick={closeMobileMenu}>
+              <Link to='footer' className='hover-effect-8' smooth={true} onClick={closeMobileMenu}>
                 CONTATO
               </Link>
             </li>        

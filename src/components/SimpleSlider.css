@@ -1,0 +1,105 @@
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: #fff;
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: normal;
+  color: #fff2ec; 
+  position: relative; 
+  padding: 30px;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.description{
+  margin-top: 20.8px;
+  font-family: 'Poppins';
+  text-align: center;
+  font-weight: normal;
+  color: #fff2ec;
+}
+
+h2 {
+  color: aliceblue;
+  font-family: 'Poppins';
+  font-weight: normal;
+}
+.header {
+  font-size: 42px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px; 
+  padding: 20px;
+}
+
+
+.title {
+  font-size: 24px; 
+  margin-top: 10px; 
+}
+
+.description {
+  font-size: 16px; 
+  color:#fff2ec;
+  margin: 10px auto; 
+  width: 80%; 
+}
+
+.slick-dots {
+  bottom: -40px; 
+}
+
+.slick-dots li button {
+  background-color: #fff2ec; 
+  opacity: 1; 
+  border-radius: 50%; 
+  width: 10px; 
+  height: 10px; 
+}
+
+.slick-dots li.slick-active button {
+  background-color: #3f3f3f; 
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px; /* Reduzir o tamanho da fonte */
+  }
+  
+  .title {
+    font-size: 20px; /* Reduzir o tamanho da fonte */
+  }
+
+  .description {
+    font-size: 14px; /* Reduzir o tamanho da fonte */
+    width: 90%; /* Aumentar a largura */
+  }
+
+  img {
+    width: 100%; /* Ajustar a largura da imagem para 100% */
+    max-width: 300px; /* Limitar a largura máxima */
+  }
+
+  .container {
+    padding: 10px; /* Reduzir o padding */
+  }
+}

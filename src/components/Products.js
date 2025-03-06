@@ -1,19 +1,17 @@
 import React from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './Products.css';
 
 const ProductCard = ({ name, description, image, paragraph }) => (
-  <div className="product-card">
-    <div className='product-content'>
-      <div className='product-text-container'>
-        <h1 className="product-name">{name}</h1>
-        <h2 className="product-description">{description}</h2>
-        <p className="product-paragraph">{paragraph}</p>
+  <div className='bodyslider'>
+    <div className='slider'>
+      <div className='slides'>
+        <img src={image} alt={name} className='slides'/>
       </div>
-      <div className='product-image-container'>
-        <img src={image} alt={name} className='product-image' />
       </div>
-    </div>
-  </div>
+    </div>  
 );
 
 const Products = () => {
@@ -46,7 +44,7 @@ const Products = () => {
     {
       name: 'ABOUT',
       description: 'Montagem de Looks',
-      paragraph: 'criação de combinações de roupas para diferentes ocasiões,usando peças que você já tem e sugerindo novas aquisiçõespara completar seu guarda-roupa.',
+      paragraph: 'Criação de combinações de roupas para diferentes ocasiões,usando peças que você já tem e sugerindo novas aquisiçõespara completar seu guarda-roupa.',
       image:'/images/productImage5.jpg'
     },
     {
@@ -69,6 +67,17 @@ const Products = () => {
     }
   ];
 
+  const settings = {
+    dots: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  };
+
+  
   return (
     <div className="products-container">
       <div className="products-grid">
